@@ -41,7 +41,7 @@
                         <li><a href="#">Co-Living</a></li>
                     </ul>
                 </div>
-                <button class="menu"
+                <button class="menu menu_toggle"
                     onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                     aria-label="Main Menu">
                     <svg width="100" height="100" viewBox="0 0 100 100">
@@ -65,14 +65,14 @@
 
 
         <!-- Overlay toogle -->
-        <div class=" toggle">
+        <div class="toggle">
             <div class="content_toggle container">
                 <div class="brand_toogle">
                     <div class="logo_toggle">
                         <img src="assets/img/logo.png" class="img_logo">
                         <div class="brand_title">Surf School</div>
                     </div>
-                    <button class="menu"
+                    <button class="menu menu_close"
                         onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                         aria-label="Main Menu">
                         <svg width="100" height="100" viewBox="0 0 100 100">
@@ -272,7 +272,7 @@
 
 
 
-
+        <script src="main.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
         <script>
