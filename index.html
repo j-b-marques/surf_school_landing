@@ -19,38 +19,104 @@
 <body>
 
     <header>
+
         <div class="hero">
-            <video src="assets/videos/video_surf.mp4" muted loop autoplay></video>
+            <video src="assets/videos/video.mp4" muted loop autoplay></video>
             <div class="overlay"></div>
         </div>
 
-        <nav class="nav_bar">
+        <nav class="nav_bar stroke">
             <div class="brand"><a href="index.html">
                     <img src="assets/img/logo.png" class="img_logo">
                     <div class="brand_title">Surf School</div>
                 </a>
             </div>
 
-            <div class="social_links">
-                <ul>
-                    <li><span class="nav_links">Surf School</span></i></li>
-                    <li><span class="nav_links">Surf Camp</span></i></li>
-                    <li><span class="nav_links">Co-Living</span></i></li>
-                </ul>
+
+            <div class="socials_nav">
+                <div class="social_links">
+                    <ul>
+                        <li><a href="#">Surf School</a></li>
+                        <li><a href="#">Surf Camp</a></li>
+                        <li><a href="#">Co-Living</a></li>
+                    </ul>
+                </div>
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+                <button class="btn btn_nav">Book Now
+                    <span></span><span></span><span></span><span></span>
+                </button>
             </div>
 
-            <button class="btn btn_nav">Book Now</button>
         </nav>
 
         <div class="content_lead">
             <h3 class="lead_title">The best surf holiday experience</h3>
         </div>
+
+
+        <!-- Overlay toogle -->
+        <div class=" toggle">
+            <div class="content_toggle container">
+                <div class="brand_toogle">
+                    <div class="logo_toggle">
+                        <img src="assets/img/logo.png" class="img_logo">
+                        <div class="brand_title">Surf School</div>
+                    </div>
+                    <button class="menu"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="options_toggle">
+                    <div class="options options-1">
+                        <h3>Camps</h3>
+                        <a href="#">Surf Camp</a>
+                        <a href="#">Junior Surf Camp</a>
+                        <a href="#">Family Surf Holidays</a>
+                        <h3>Surf</h3>
+                        <a href="#">Surf School</a>
+                        <h3>Surf Trips</h3>
+                        <a href="#">Sri Lanka</a>
+                    </div>
+                    <div class="options options-2">
+                        <h3>Group Trips</h3>
+                        <a href="#">Corporate Travel</a>
+                        <a href="#">Bachelor Parties</a>
+                        <a href="#">Sports trips</a>
+                        <a href="#">Studen Travel</a>
+                    </div>
+                    <div class="options options-3">
+                        <h3>Others</h3>
+                        <a href="#">About Us</a>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Afiliate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </header>
 
 
     <div class="container first_page_ct">
-
-
         <div class="first_page_content">
             <h3 class="first_page_title">Welcome to Surf Camp Portugal</h3>
             <p class="first_page_text">
@@ -95,12 +161,7 @@
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
+
                         </ul>
                         <span class="final">& view more ></span>
                         <button class="btn btn_card"><i class="uil uil-arrow-right"></i><span>Book Now</span></button>
@@ -108,7 +169,10 @@
                 </div>
 
                 <div class="card card-2">
-                    <img class="img_card img_card-1" src="assets/img/img2.jpg" />
+                    <div class="img_wrp">
+                        <img class="img_card img_card-2" />
+                    </div>
+
                     <div class="card_content ">
                         <span class="card_sub">FROM 499€</span>
                         <span class="card_title">Surf & Yoga Pack</span>
@@ -119,11 +183,7 @@
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
+
                         </ul>
                         <span class="final">& view more ></span>
                         <button class="btn btn_card"><i class="uil uil-arrow-right"></i><span>Book Now</span></button>
@@ -143,11 +203,7 @@
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
                             <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
-                            <li><i class="uil uil-check check"></i><span>7 Nights Accomodation</span></li>
+
                         </ul>
                         <span class="final">& view more ></span>
                         <button class="btn btn_card"><i class="uil uil-arrow-right"></i><span>Book Now</span></button>
