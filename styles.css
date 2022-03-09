@@ -203,6 +203,10 @@ header {
   gap: 10px;
 }
 
+.options a {
+  color: #022c63;
+}
+
 /********************/
 .first_page_ct {
   position: relative;
