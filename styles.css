@@ -298,7 +298,7 @@ img {
 .card_wrapper {
   display: flex;
   gap: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -357,11 +357,6 @@ img {
   margin-right: 5px;
 }
 
-.img_wrp {
-  width: 100%;
-  height: 250px;
-}
-
 /*****************/
 
 .card_swiper {
@@ -370,28 +365,49 @@ img {
 
 .swiper {
   width: 100%;
-  height: 100%;
 }
 
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.swiper-wrapper {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.swiper-slide img {
+  border-radius: 5%;
+}
+
+.swp_ct {
+  margin-bottom: 80px;
+}
+
+/***************/
+
+.third_page_content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.card_swiper img {
-  border-radius: 10%;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.third_card_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.cards_third_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #4e4e4e;
+}
+
+.card_third_title {
+  align-self: flex-start;
+}
+
+.cards_third_page img {
+  border-radius: 5%;
 }
