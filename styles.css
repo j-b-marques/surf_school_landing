@@ -65,49 +65,7 @@ header {
   padding: 20px 80px;
   font-size: 1.2rem;
 }
-.menu {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  padding: 0;
-  width: 50px;
-}
 
-.line {
-  fill: none;
-  stroke: white;
-  stroke-width: 6;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.line1 {
-  stroke-dasharray: 60 207;
-  stroke-width: 6;
-}
-.line2 {
-  stroke-dasharray: 60 60;
-  stroke-width: 6;
-}
-.line3 {
-  stroke-dasharray: 60 207;
-  stroke-width: 6;
-}
-.opened .line1 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -134;
-  stroke-width: 6;
-}
-.opened .line2 {
-  stroke-dasharray: 1 60;
-  stroke-dashoffset: -30;
-  stroke-width: 6;
-}
-.opened .line3 {
-  stroke-dasharray: 90 207;
-  stroke-dashoffset: -134;
-  stroke-width: 6;
-}
 
 .brand {
   font-size: 1.7rem;
@@ -137,87 +95,42 @@ header {
   color: white;
 }
 
-/***Stroke*/
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all 0.5s;
-}
-nav ul li a:hover {
-  color: black;
-}
-
-/* stroke */
-nav.stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: black;
-  height: 1px;
-}
-nav.stroke ul li a:hover:after {
-  width: 100%;
-}
-
-nav.fill ul li a {
-  transition: all 2s;
-}
-
-nav.fill ul li a:after {
-  text-align: left;
-  content: ".";
-  margin: 0;
-  opacity: 0;
-}
-nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
-}
-nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
-
 .img_logo {
   width: 80px;
   height: 80px;
   transform: translateY(-2px);
 }
 
+
+
+/* CSS */
 .btn_nav {
-  font-family: var(--font-fam);
+  background-color: #00b2e9;
+  border-radius: 100px;
+  box-shadow: rgba(28, 185, 185, 0.938) 0 -25px 18px -14px inset,rgba(31, 175, 211, 0.836) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
   color: white;
-  background-image: linear-gradient(
-    to right,
-    #141e30 0%,
-    #243b55 51%,
-    #141e30 100%
-  );
-  transition: 0.5s;
-  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
-  font-size: 1.2rem;
-  padding: 7px 15px;
-  border-radius: 10px;
-  border: 1px solid#4E4E4E;
-  background-size: 200% auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--font-fam);
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1.1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .btn_nav:hover {
-  background-position: right center;
+  box-shadow: rgba(1, 109, 252, 0.35) 0 -25px 18px -14px inset,rgba(3, 78, 218, 0.986) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(3, 102, 184, 0.822) 0 8px 16px,rgba(10, 183, 226, 0.733) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }
+
 
 .content_lead {
   position: absolute;
@@ -239,7 +152,7 @@ nav.fill ul li a:hover:after {
 }
 
 .toggle {
-  position: absolute;
+  position: fixed;
   background: white;
   top: -100%;
   left: 0;
