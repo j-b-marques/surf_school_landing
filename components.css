@@ -1,20 +1,20 @@
 /***Stroke*/
-nav ul .btn_nav a,
-nav ul .btn_nav a:after,
-nav ul .btn_nav a:before {
+nav ul a,
+nav ul a:after,
+nav ul a:before {
   transition: all 0.5s;
 }
-nav ul .btn_nav a:hover {
+nav ul a:hover {
   color: black;
 }
 
 /* stroke */
-nav.stroke ul .btn_nav a,
-nav.fill ul .btn_nav a {
+nav.stroke ul a,
+nav.fill ul a {
   position: relative;
 }
-nav.stroke ul .btn_nav a:after,
-nav.fill ul .btn_nav a:after {
+nav.stroke ul a:after,
+nav.fill ul a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -26,25 +26,25 @@ nav.fill ul .btn_nav a:after {
   background: black;
   height: 1px;
 }
-nav.stroke ul .btn_nav a:hover:after {
+nav.stroke ul a:hover:after {
   width: 100%;
 }
 
-nav.fill ul .btn_nav a {
+nav.fill ul a {
   transition: all 2s;
 }
 
-nav.fill ul .btn_nav a:after {
+nav.fill ul a:after {
   text-align: left;
   content: ".";
   margin: 0;
   opacity: 0;
 }
-nav.fill ul .btn_nav a:hover {
+nav.fill ul a:hover {
   color: #fff;
   z-index: 1;
 }
-nav.fill ul .btn_nav a:hover:after {
+nav.fill ul a:hover:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;
