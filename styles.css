@@ -300,6 +300,7 @@ img {
 .card {
   background-color: white;
   width: 350px;
+  cursor: grab;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -307,14 +308,21 @@ img {
 .card img {
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
   object-fit: cover;
+  transition: all 0.5s;
 }
 
-.card-1{
+.card img:hover {
+  scale: 1.1;
+}
+
+.card-1 {
   height: 90%;
 }
 
-.card a{
+.card a {
   font-size: 1rem;
   font-family: inherit;
   color: #4e4e4e;
@@ -349,21 +357,6 @@ img {
   width: 100%;
   height: 250px;
 }
-
-.img_card-2 {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  background-image: url("assets/img/img2.jpg");
-  background-position: center;
-  background-size: cover;
-  transition: all 0.5s;
-}
-
-.img_wrp:hover .img_card-2 {
-  transform: scale(1.1);
-}
-
 
 /*****************/
 
