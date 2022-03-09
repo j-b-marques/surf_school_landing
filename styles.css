@@ -66,7 +66,6 @@ header {
   font-size: 1.2rem;
 }
 
-
 .brand {
   font-size: 1.7rem;
 }
@@ -101,19 +100,20 @@ header {
   transform: translateY(-2px);
 }
 
-
-
 /* CSS */
 .btn_nav {
   background-color: #00b2e9;
   border-radius: 100px;
-  box-shadow: rgba(28, 185, 185, 0.938) 0 -25px 18px -14px inset,rgba(31, 175, 211, 0.836) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  box-shadow: rgba(28, 185, 185, 0.938) 0 -25px 18px -14px inset,
+    rgba(31, 175, 211, 0.836) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
   color: white;
   cursor: pointer;
   text-transform: uppercase;
   font-family: var(--font-fam);
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
@@ -127,10 +127,12 @@ header {
 }
 
 .btn_nav:hover {
-  box-shadow: rgba(1, 109, 252, 0.35) 0 -25px 18px -14px inset,rgba(3, 78, 218, 0.986) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(3, 102, 184, 0.822) 0 8px 16px,rgba(10, 183, 226, 0.733) 0 16px 32px;
+  box-shadow: rgba(1, 109, 252, 0.35) 0 -25px 18px -14px inset,
+    rgba(3, 78, 218, 0.986) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(3, 102, 184, 0.822) 0 8px 16px,
+    rgba(10, 183, 226, 0.733) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
-
 
 .content_lead {
   position: absolute;
@@ -292,6 +294,7 @@ img {
 .card_wrapper {
   display: flex;
   gap: 40px;
+  margin-bottom: 200px;
 }
 
 .card {
@@ -305,6 +308,17 @@ img {
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   object-fit: cover;
+}
+
+.card-1{
+  height: 90%;
+}
+
+.card a{
+  font-size: 1rem;
+  font-family: inherit;
+  color: #4e4e4e;
+  margin-bottom: 5px;
 }
 
 .details {
@@ -327,13 +341,8 @@ img {
 }
 
 .check {
-  font-size: 0.8rem;
-  background-color: white;
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 10px;
+  font-size: 1.2rem;
+  margin-right: 5px;
 }
 
 .img_wrp {
@@ -354,6 +363,7 @@ img {
 .img_wrp:hover .img_card-2 {
   transform: scale(1.1);
 }
+
 
 /*****************/
 
