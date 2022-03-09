@@ -213,34 +213,32 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="container swp_ct">
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="assets/img/img4.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/img5.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/img6.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/img/img7.jpg">
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </div>
     </div>
 
+    <div class="swp_ct container-xl">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/img/img4.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/img5.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/img6.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/img7.jpg">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
 
 
 
@@ -285,7 +283,6 @@
         </div>
     </div>
 
-
     <script src="main.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
@@ -293,7 +290,7 @@
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             loop: true,
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 10,
             grabCursor: true,
         });
@@ -311,8 +308,10 @@
                 hide: true,
             },
         });
-
     </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+        async></script>
 </body>
 
 </html>

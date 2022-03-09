@@ -385,6 +385,7 @@ img {
 
 .swp_ct {
   margin-bottom: 80px;
+  width: 100%;
   z-index: 0;
   position: relative;
 }
@@ -395,6 +396,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 300px;
 }
 
 .third_card_wrapper {
@@ -424,3 +426,7 @@ img {
 .cards_third_page img {
   border-radius: 5%;
 }
+
+/*********/
+
+
