@@ -27,6 +27,12 @@ button {
   margin: 0 auto;
 }
 
+.container-xl {
+  max-width: 1400px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
 /*************/
 
 header {
@@ -379,6 +385,8 @@ img {
 
 .swp_ct {
   margin-bottom: 80px;
+  z-index: 0;
+  position: relative;
 }
 
 /***************/
@@ -391,7 +399,7 @@ img {
 
 .third_card_wrapper {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: flex-start;
 }
 
@@ -402,10 +410,15 @@ img {
   justify-content: center;
   gap: 10px;
   color: #4e4e4e;
+  width: 100%;
 }
 
 .card_third_title {
   align-self: flex-start;
+}
+
+.card_third_descript {
+  text-align: center;
 }
 
 .cards_third_page img {
